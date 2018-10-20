@@ -11,7 +11,6 @@
 
 int main() {
     Matrice m;
-    m.setRowsColws();
     m.getRowsColws();
     return 0;
 }

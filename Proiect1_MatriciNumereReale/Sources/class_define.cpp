@@ -24,6 +24,22 @@ void Matrice::setRowsColws() {
 }
 
 void Matrice::getRowsColws() {
-    std::cout << "Numarul de linii este:"<< mRows << std::endl << "Numarul de linii este:" << mCols;
+    std::cout << "Numarul de linii este:"<< mRows << std::endl << "Numarul de linii este:" << mCols << std::endl;
+}
+
+Matrice::Matrice(unsigned int rows, unsigned int cols) {
+    mRows = rows;
+    mCols = cols;
+    alloc();
+    for (int i = 0; i < mRows; i++)
+        for (int j = 0; j < mCols; j++)
+            if (i == j)
+                Matrix[i][j] = 1;
+}
+
+Matrice::~Matrice() {
+    for (int i = 0; i < mRows; i++)
+        delete [] Matrix[i];
+    delete [] Matrix;
 }
 

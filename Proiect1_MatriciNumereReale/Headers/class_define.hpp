@@ -8,6 +8,8 @@
 
 class Matrice {
 public:
+    Matrice(unsigned int rows = 1, unsigned int cols = 1);
+    ~Matrice();
     void setRowsColws();
     void getRowsColws();
 private:
