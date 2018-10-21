@@ -16,11 +16,9 @@ void Matrice::alloc() {
     }
 }
 
-void Matrice::setRowsColws() {
-    unsigned int Cols, Rows;
-    std::cin >> Rows >> Cols;
-    this->mCols = Cols;
-    this->mRows = Rows;
+void Matrice::setRowsColws(unsigned int Rows, unsigned int Cols) {
+    mCols = Cols;
+    mRows = Rows;
 }
 
 void Matrice::getRowsColws() {
@@ -43,3 +41,6 @@ Matrice::~Matrice() {
     delete [] Matrix;
 }
 
+void Matrice::getElement(unsigned int i, unsigned int j) {
+    std::cout << Matrix[i][j] << std::endl;
+}

@@ -10,8 +10,9 @@ class Matrice {
 public:
     Matrice(unsigned int rows = 1, unsigned int cols = 1);
     ~Matrice();
-    void setRowsColws();
+    void setRowsColws(unsigned int Rows, unsigned int Cols);
     void getRowsColws();
+    void getElement(unsigned int i, unsigned int j);
 private:
     unsigned int mRows;
     unsigned int mCols;

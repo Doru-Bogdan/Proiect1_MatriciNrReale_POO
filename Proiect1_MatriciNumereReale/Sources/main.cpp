@@ -12,5 +12,7 @@
 int main() {
     Matrice m;
     m.getRowsColws();
+    m.setRowsColws(3, 3);
+    m.getElement(1,1);
     return 0;
 }
