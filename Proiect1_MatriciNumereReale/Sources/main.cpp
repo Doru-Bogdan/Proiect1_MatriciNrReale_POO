@@ -13,6 +13,6 @@ int main() {
     Matrice m;
     m.getRowsColws();
     m.setRowsColws(3, 3);
-    m.getElement(1,1);
+    m.getElement(2,2);
     return 0;
 }

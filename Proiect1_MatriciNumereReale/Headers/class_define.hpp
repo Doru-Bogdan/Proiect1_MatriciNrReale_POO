@@ -5,6 +5,8 @@
 //  Created by Doru Mancila on 20/10/2018.
 //  Copyright © 2018 Doru Mancila. All rights reserved.
 //
+#include <vector>
+typedef std::vector < std::vector <double> > matrix;
 
 class Matrice {
 public:
@@ -16,6 +18,6 @@ public:
 private:
     unsigned int mRows;
     unsigned int mCols;
-    double **Matrix;
+    matrix Matrix;
     void alloc();
 };

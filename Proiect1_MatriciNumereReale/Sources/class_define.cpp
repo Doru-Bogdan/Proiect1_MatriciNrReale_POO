@@ -6,19 +6,19 @@
 //  Copyright © 2018 Doru Mancila. All rights reserved.
 //
 
-#include "class_define.hpp"
 #include <iostream>
+#include "class_define.hpp"
 
 void Matrice::alloc() {
-    Matrix = new double * [mRows];
-    for (int i = 0; i < mRows; i++) {
-        Matrix[i] = new double [mCols];
-    }
+    Matrix.resize(mRows);
+    for (int i = 0; i < mRows; i++)
+        Matrix[i].resize(mCols);
 }
 
 void Matrice::setRowsColws(unsigned int Rows, unsigned int Cols) {
     mCols = Cols;
     mRows = Rows;
+    alloc();
 }
 
 void Matrice::getRowsColws() {
@@ -36,9 +36,9 @@ Matrice::Matrice(unsigned int rows, unsigned int cols) {
 }
 
 Matrice::~Matrice() {
-    for (int i = 0; i < mRows; i++)
-        delete [] Matrix[i];
-    delete [] Matrix;
+   for (int i = 0; i < mRows; i++)
+       Matrix[i].clear();
+    Matrix.clear();
 }
 
 void Matrice::getElement(unsigned int i, unsigned int j) {
