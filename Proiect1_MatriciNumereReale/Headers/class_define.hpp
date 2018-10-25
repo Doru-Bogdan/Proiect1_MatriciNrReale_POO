@@ -6,18 +6,25 @@
 //  Copyright © 2018 Doru Mancila. All rights reserved.
 //
 #include <vector>
-typedef std::vector < std::vector <double> > matrix;
 
-class Matrice {
+
+
+class Matrix {
 public:
-    Matrice(unsigned int rows = 1, unsigned int cols = 1);
-    ~Matrice();
+    Matrix(unsigned int rows = 1, unsigned int cols = 1);
+    ~Matrix();
     void setRowsColws(unsigned int Rows, unsigned int Cols);
     void getRowsColws();
     void getElement(unsigned int i, unsigned int j);
+    void afis();
+    friend std::ifstream& operator >> (std::ifstream&, Matrix &);
+    friend std::istream& operator >> (std::istream&, Matrix &);
+    friend std::ofstream& operator << (std::ofstream& , Matrix &);
+    friend std::ostream& operator << (std::ostream& , Matrix &);
 private:
-    unsigned int mRows;
-    unsigned int mCols;
-    matrix Matrix;
+    unsigned int _rows;
+    unsigned int _cols;
+    typedef std::vector < std::vector <double> > matrix;
+    matrix _matrix;
     void alloc();
 };

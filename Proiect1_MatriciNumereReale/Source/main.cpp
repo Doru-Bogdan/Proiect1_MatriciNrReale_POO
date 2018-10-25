@@ -7,12 +7,18 @@
 //
 
 #include <iostream>
+#include <fstream>
 #include "class_define.hpp"
 
 int main() {
-    Matrice m;
-    m.getRowsColws();
-    m.setRowsColws(3, 3);
-    m.getElement(2,2);
+    Matrix m(5,5);
+    m.afis();
+    std::ifstream f("Source/data.in");
+    f >> m;
+    f.close();
+    std::ofstream g("Source/data.out");
+    std::cout << m;
+    g << m;
+    //m.afis();
     return 0;
 }
