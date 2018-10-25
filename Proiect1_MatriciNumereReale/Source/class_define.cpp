@@ -16,14 +16,12 @@ void Matrix::alloc() {
         _matrix[i].resize(_cols);
 }
 
-void Matrix::setRowsColws(unsigned int Rows, unsigned int Cols) {
-    _cols = Cols;
-    _rows = Rows;
-    alloc();
+unsigned int Matrix::getRows() {
+    return _rows;
 }
 
-void Matrix::getRowsColws() {
-    std::cout << "Numarul de linii este:"<< _rows << std::endl << "Numarul de linii este:" << _cols << std::endl;
+unsigned int Matrix::getCols() {
+    return _cols;
 }
 
 Matrix::Matrix(unsigned int rows, unsigned int cols) {
@@ -42,18 +40,6 @@ Matrix::~Matrix() {
     _matrix.clear();
 }
 
-void Matrix::afis() {
-    for (int i = 0; i < _rows; i++){
-        for (int j = 0; j < _cols; j++)
-            std::cout << _matrix[i][j] << " ";
-            std::cout << std::endl;
-        }
-}
-
-void Matrix::getElement(unsigned int i, unsigned int j) {
-    std::cout << _matrix[i][j] << std::endl;
-}
-
 std::ifstream& operator >> (std::ifstream& f, Matrix &m){
     for (int i = 0; i < m._rows; i++) {
         for (int j = 0; j < m._cols; j++) {
@@ -63,13 +49,13 @@ std::ifstream& operator >> (std::ifstream& f, Matrix &m){
     return f;
 }
 
-std::istream& operator >> (std::istream& f, Matrix &m){
+std::istream& operator >> (std::istream& cin, Matrix &m){
     for (int i = 0; i < m._rows; i++) {
         for (int j = 0; j < m._cols; j++) {
             std::cin >> m._matrix[i][j];
         }
     }
-    return f;
+    return cin;
 }
 
 std::ofstream& operator << (std::ofstream& f, Matrix &m){
@@ -81,11 +67,11 @@ std::ofstream& operator << (std::ofstream& f, Matrix &m){
     return f;
 }
 
-std::ostream& operator << (std::ostream& f, Matrix &m){
+std::ostream& operator << (std::ostream& cout, Matrix &m){
     for (int i = 0; i < m._rows; i++) {
         for (int j = 0; j < m._cols; j++)
             std::cout << m._matrix[i][j] << " ";
         std::cout << "\n";
     }
-    return f;
+    return cout;
 }

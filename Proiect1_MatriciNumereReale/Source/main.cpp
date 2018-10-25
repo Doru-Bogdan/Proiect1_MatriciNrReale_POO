@@ -12,7 +12,9 @@
 
 int main() {
     Matrix m(5,5);
-    m.afis();
+    unsigned int i = m.getRows();
+    std::cout << i << "\n";
+    //m.afis();
     std::ifstream f("Source/data.in");
     f >> m;
     f.close();

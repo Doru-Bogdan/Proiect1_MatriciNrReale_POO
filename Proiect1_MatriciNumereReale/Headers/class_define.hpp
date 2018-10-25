@@ -13,10 +13,8 @@ class Matrix {
 public:
     Matrix(unsigned int rows = 1, unsigned int cols = 1);
     ~Matrix();
-    void setRowsColws(unsigned int Rows, unsigned int Cols);
-    void getRowsColws();
-    void getElement(unsigned int i, unsigned int j);
-    void afis();
+    unsigned int getRows();
+    unsigned int getCols();
     friend std::ifstream& operator >> (std::ifstream&, Matrix &);
     friend std::istream& operator >> (std::istream&, Matrix &);
     friend std::ofstream& operator << (std::ofstream& , Matrix &);
