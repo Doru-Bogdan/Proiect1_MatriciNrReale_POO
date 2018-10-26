@@ -34,10 +34,53 @@ Matrix::Matrix(unsigned int rows, unsigned int cols) {
                 _matrix[i][j] = 1;
 }
 
+Matrix::Matrix(Matrix &m) {
+    _rows = m._rows;
+    _cols = m._cols;
+    alloc();
+    _matrix = m._matrix;
+}
+
 Matrix::~Matrix() {
    for (int i = 0; i < _rows; i++)
        _matrix[i].clear();
     _matrix.clear();
+}
+
+Matrix Matrix::operator+=(Matrix m) {
+    if(_rows != m._rows || _cols != m._cols) {
+        std::cout << "Number of rows or colums from the two matrix are not equal" << "\n";
+        return *this;
+    }
+    for (int i = 0; i < _rows; i++)
+        for (int j = 0; j < _cols; j++)
+            _matrix[i][j] += m._matrix[i][j];
+    return *this;
+}
+
+Matrix Matrix::operator+=(double x) {
+    for (int i = 0; i < _rows; i++)
+        for (int j = 0; j < _cols; j++)
+            _matrix[i][j] += x;
+    return *this;
+}
+
+Matrix Matrix::operator-=(Matrix m) {
+    if(_rows != m._rows || _cols != m._cols) {
+        std::cout << "Number of rows or colums from the two matrix are not equal" << "\n";
+        return *this;
+    }
+    for (int i = 0; i < _rows; i++)
+        for (int j = 0; j < _cols; j++)
+            _matrix[i][j] -= m._matrix[i][j];
+    return *this;
+}
+
+Matrix Matrix::operator-=(double x) {
+    for (int i = 0; i < _rows; i++)
+        for (int j = 0; j < _cols; j++)
+            _matrix[i][j] -= x;
+    return *this;
 }
 
 std::ifstream& operator >> (std::ifstream& f, Matrix &m){

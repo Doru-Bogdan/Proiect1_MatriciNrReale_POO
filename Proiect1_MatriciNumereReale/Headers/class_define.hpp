@@ -12,9 +12,14 @@
 class Matrix {
 public:
     Matrix(unsigned int rows = 1, unsigned int cols = 1);
+    Matrix(Matrix&);
     ~Matrix();
     unsigned int getRows();
     unsigned int getCols();
+    Matrix operator += (Matrix);
+    Matrix operator += (double);
+    Matrix operator -= (Matrix);
+    Matrix operator -= (double);
     friend std::ifstream& operator >> (std::ifstream&, Matrix &);
     friend std::istream& operator >> (std::istream&, Matrix &);
     friend std::ofstream& operator << (std::ofstream& , Matrix &);

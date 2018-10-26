@@ -12,15 +12,16 @@
 
 int main() {
     Matrix m(5,5);
-    unsigned int i = m.getRows();
-    std::cout << i << "\n";
-    //m.afis();
-    std::ifstream f("Source/data.in");
+    Matrix n(m);
+    m -= n;
+    std::cout << m;
+    //unsigned int i = m.getRows();
+    //std::cout << i << "\n";
+    /*std::ifstream f("Source/data.in");
     f >> m;
     f.close();
-    std::ofstream g("Source/data.out");
-    std::cout << m;
-    g << m;
-    //m.afis();
+    //std::ofstream g("Source/data.out");
+    std::cout << m << "\n" << n;
+    //g << m;*/
     return 0;
 }

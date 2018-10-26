@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>130303A5-E51C-4577-B168-D3519FAFDFA5</key>
+		<key>008A98FE-06A5-4996-9501-E235C7D58B85</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>130303A5-E51C-4577-B168-D3519FAFDFA5.xcactivitylog</string>
+			<string>008A98FE-06A5-4996-9501-E235C7D58B85.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -27,15 +27,15 @@
 			<key>signature</key>
 			<string>Debug Proiect1_MatriciNumereReale</string>
 			<key>timeStartedRecording</key>
-			<real>562185654.50641596</real>
+			<real>562272857.52728403</real>
 			<key>timeStoppedRecording</key>
-			<real>562185655.82195401</real>
+			<real>562272858.80921495</real>
 			<key>title</key>
 			<string>Debug Proiect1_MatriciNumereReale</string>
 			<key>uniqueIdentifier</key>
-			<string>130303A5-E51C-4577-B168-D3519FAFDFA5</string>
+			<string>008A98FE-06A5-4996-9501-E235C7D58B85</string>
 		</dict>
-		<key>2BCC272D-0878-4A9B-AEC4-AADDDE7DF89C</key>
+		<key>2EC24056-D45A-44D3-9A1E-7EB2E1A0B27C</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -44,7 +44,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>2BCC272D-0878-4A9B-AEC4-AADDDE7DF89C.xcactivitylog</string>
+			<string>2EC24056-D45A-44D3-9A1E-7EB2E1A0B27C.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -56,15 +56,15 @@
 			<key>signature</key>
 			<string>Debug Proiect1_MatriciNumereReale</string>
 			<key>timeStartedRecording</key>
-			<real>562184730.38536406</real>
+			<real>562272880.86948299</real>
 			<key>timeStoppedRecording</key>
-			<real>562184751.34916401</real>
+			<real>562272882.16566896</real>
 			<key>title</key>
 			<string>Debug Proiect1_MatriciNumereReale</string>
 			<key>uniqueIdentifier</key>
-			<string>2BCC272D-0878-4A9B-AEC4-AADDDE7DF89C</string>
+			<string>2EC24056-D45A-44D3-9A1E-7EB2E1A0B27C</string>
 		</dict>
-		<key>2E128FCD-BB90-48E7-810F-873A8F89FD26</key>
+		<key>6804D193-7B92-44F3-806A-6B8C9482742D</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -73,7 +73,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>2E128FCD-BB90-48E7-810F-873A8F89FD26.xcactivitylog</string>
+			<string>6804D193-7B92-44F3-806A-6B8C9482742D.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -85,15 +85,15 @@
 			<key>signature</key>
 			<string>Debug Proiect1_MatriciNumereReale</string>
 			<key>timeStartedRecording</key>
-			<real>562183457.23346806</real>
+			<real>562272911.75199604</real>
 			<key>timeStoppedRecording</key>
-			<real>562183467.17154205</real>
+			<real>562272913.00675201</real>
 			<key>title</key>
 			<string>Debug Proiect1_MatriciNumereReale</string>
 			<key>uniqueIdentifier</key>
-			<string>2E128FCD-BB90-48E7-810F-873A8F89FD26</string>
+			<string>6804D193-7B92-44F3-806A-6B8C9482742D</string>
 		</dict>
-		<key>5B5B6388-AFFE-469C-8603-C80D3A52DB90</key>
+		<key>71F0AB52-A2F6-4AE9-A701-BF32187BB52F</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -102,7 +102,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>5B5B6388-AFFE-469C-8603-C80D3A52DB90.xcactivitylog</string>
+			<string>71F0AB52-A2F6-4AE9-A701-BF32187BB52F.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -114,15 +114,15 @@
 			<key>signature</key>
 			<string>Debug Proiect1_MatriciNumereReale</string>
 			<key>timeStartedRecording</key>
-			<real>561987703.11181104</real>
+			<real>562271517.32425201</real>
 			<key>timeStoppedRecording</key>
-			<real>561987704.45214999</real>
+			<real>562271518.72752905</real>
 			<key>title</key>
 			<string>Debug Proiect1_MatriciNumereReale</string>
 			<key>uniqueIdentifier</key>
-			<string>5B5B6388-AFFE-469C-8603-C80D3A52DB90</string>
+			<string>71F0AB52-A2F6-4AE9-A701-BF32187BB52F</string>
 		</dict>
-		<key>641F8A11-959E-4C73-AAA8-A4A027179543</key>
+		<key>7DA2D6D3-8F58-4628-A2CF-710AD72405BE</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -131,7 +131,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>641F8A11-959E-4C73-AAA8-A4A027179543.xcactivitylog</string>
+			<string>7DA2D6D3-8F58-4628-A2CF-710AD72405BE.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -143,15 +143,15 @@
 			<key>signature</key>
 			<string>Debug Proiect1_MatriciNumereReale</string>
 			<key>timeStartedRecording</key>
-			<real>562183754.98295605</real>
+			<real>562273911.31464195</real>
 			<key>timeStoppedRecording</key>
-			<real>562183756.39207602</real>
+			<real>562273912.57921302</real>
 			<key>title</key>
 			<string>Debug Proiect1_MatriciNumereReale</string>
 			<key>uniqueIdentifier</key>
-			<string>641F8A11-959E-4C73-AAA8-A4A027179543</string>
+			<string>7DA2D6D3-8F58-4628-A2CF-710AD72405BE</string>
 		</dict>
-		<key>76230789-EE13-4E39-AA45-D51A5437094F</key>
+		<key>80A084F5-E09E-41B6-BDFF-858F7F5A7858</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -160,7 +160,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>76230789-EE13-4E39-AA45-D51A5437094F.xcactivitylog</string>
+			<string>80A084F5-E09E-41B6-BDFF-858F7F5A7858.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -172,15 +172,15 @@
 			<key>signature</key>
 			<string>Debug Proiect1_MatriciNumereReale</string>
 			<key>timeStartedRecording</key>
-			<real>562186860.84038699</real>
+			<real>562272990.548316</real>
 			<key>timeStoppedRecording</key>
-			<real>562186862.12040699</real>
+			<real>562272991.80227101</real>
 			<key>title</key>
 			<string>Debug Proiect1_MatriciNumereReale</string>
 			<key>uniqueIdentifier</key>
-			<string>76230789-EE13-4E39-AA45-D51A5437094F</string>
+			<string>80A084F5-E09E-41B6-BDFF-858F7F5A7858</string>
 		</dict>
-		<key>D0D6DB2A-EFDF-48B4-AB63-5A7CB0162946</key>
+		<key>8A6E5638-6ED6-476A-BDCC-CA18B04044A5</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -189,7 +189,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>D0D6DB2A-EFDF-48B4-AB63-5A7CB0162946.xcactivitylog</string>
+			<string>8A6E5638-6ED6-476A-BDCC-CA18B04044A5.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -201,13 +201,129 @@
 			<key>signature</key>
 			<string>Debug Proiect1_MatriciNumereReale</string>
 			<key>timeStartedRecording</key>
-			<real>562183485.56707001</real>
+			<real>562273901.57882595</real>
 			<key>timeStoppedRecording</key>
-			<real>562183487.08624399</real>
+			<real>562273902.85373604</real>
 			<key>title</key>
 			<string>Debug Proiect1_MatriciNumereReale</string>
 			<key>uniqueIdentifier</key>
-			<string>D0D6DB2A-EFDF-48B4-AB63-5A7CB0162946</string>
+			<string>8A6E5638-6ED6-476A-BDCC-CA18B04044A5</string>
+		</dict>
+		<key>8DB85B52-5458-45D0-9082-8BBDEFBC76FB</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>8DB85B52-5458-45D0-9082-8BBDEFBC76FB.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Proiect1_MatriciNumereReale project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Proiect1_MatriciNumereReale</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Debug Proiect1_MatriciNumereReale</string>
+			<key>timeStartedRecording</key>
+			<real>562273001.23920703</real>
+			<key>timeStoppedRecording</key>
+			<real>562273002.53045499</real>
+			<key>title</key>
+			<string>Debug Proiect1_MatriciNumereReale</string>
+			<key>uniqueIdentifier</key>
+			<string>8DB85B52-5458-45D0-9082-8BBDEFBC76FB</string>
+		</dict>
+		<key>B07871AE-7FCF-4149-8690-A72725DDA651</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B07871AE-7FCF-4149-8690-A72725DDA651.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Proiect1_MatriciNumereReale project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Proiect1_MatriciNumereReale</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Debug Proiect1_MatriciNumereReale</string>
+			<key>timeStartedRecording</key>
+			<real>562273584.30209506</real>
+			<key>timeStoppedRecording</key>
+			<real>562273585.55206501</real>
+			<key>title</key>
+			<string>Debug Proiect1_MatriciNumereReale</string>
+			<key>uniqueIdentifier</key>
+			<string>B07871AE-7FCF-4149-8690-A72725DDA651</string>
+		</dict>
+		<key>B144F3EC-FF6C-4A0A-98C6-28F5F9B2F174</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B144F3EC-FF6C-4A0A-98C6-28F5F9B2F174.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Proiect1_MatriciNumereReale project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Proiect1_MatriciNumereReale</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Debug Proiect1_MatriciNumereReale</string>
+			<key>timeStartedRecording</key>
+			<real>562271377.51668096</real>
+			<key>timeStoppedRecording</key>
+			<real>562271383.19325101</real>
+			<key>title</key>
+			<string>Debug Proiect1_MatriciNumereReale</string>
+			<key>uniqueIdentifier</key>
+			<string>B144F3EC-FF6C-4A0A-98C6-28F5F9B2F174</string>
+		</dict>
+		<key>D0DD69C2-CD01-4589-9D95-F521A6E414D6</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D0DD69C2-CD01-4589-9D95-F521A6E414D6.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Proiect1_MatriciNumereReale project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Proiect1_MatriciNumereReale</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Debug Proiect1_MatriciNumereReale</string>
+			<key>timeStartedRecording</key>
+			<real>562273887.04159796</real>
+			<key>timeStoppedRecording</key>
+			<real>562273888.31608105</real>
+			<key>title</key>
+			<string>Debug Proiect1_MatriciNumereReale</string>
+			<key>uniqueIdentifier</key>
+			<string>D0DD69C2-CD01-4589-9D95-F521A6E414D6</string>
 		</dict>
 		<key>DA193942-564C-4F9C-96D7-2F67E40B0EA8</key>
 		<dict>
@@ -237,64 +353,6 @@
 			<string>Debug Proiect1_MatriciNumereReale</string>
 			<key>uniqueIdentifier</key>
 			<string>DA193942-564C-4F9C-96D7-2F67E40B0EA8</string>
-		</dict>
-		<key>E5FE7AB9-3159-448B-B937-4BF8F48C3842</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>E5FE7AB9-3159-448B-B937-4BF8F48C3842.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>Proiect1_MatriciNumereReale project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Proiect1_MatriciNumereReale</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>0</integer>
-			<key>signature</key>
-			<string>Debug Proiect1_MatriciNumereReale</string>
-			<key>timeStartedRecording</key>
-			<real>562187445.26928902</real>
-			<key>timeStoppedRecording</key>
-			<real>562187446.56965601</real>
-			<key>title</key>
-			<string>Debug Proiect1_MatriciNumereReale</string>
-			<key>uniqueIdentifier</key>
-			<string>E5FE7AB9-3159-448B-B937-4BF8F48C3842</string>
-		</dict>
-		<key>EF4F51C7-7ED3-437E-A47E-ECE92ECE6841</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>EF4F51C7-7ED3-437E-A47E-ECE92ECE6841.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>Proiect1_MatriciNumereReale project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Proiect1_MatriciNumereReale</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>0</integer>
-			<key>signature</key>
-			<string>Debug Proiect1_MatriciNumereReale</string>
-			<key>timeStartedRecording</key>
-			<real>562183776.58272004</real>
-			<key>timeStoppedRecording</key>
-			<real>562183778.02892601</real>
-			<key>title</key>
-			<string>Debug Proiect1_MatriciNumereReale</string>
-			<key>uniqueIdentifier</key>
-			<string>EF4F51C7-7ED3-437E-A47E-ECE92ECE6841</string>
 		</dict>
 	</dict>
 </dict>
