@@ -51,7 +51,9 @@ Matrix::~Matrix() {
     _matrix.clear();
 }
 
-Matrix Matrix::operator += (Matrix m) {
+/// Composed overloaded operators
+
+Matrix Matrix::operator += (Matrix& m) {
     if (_rows != m._rows || _cols != m._cols) {
         std::cout << "Number of rows or colums from the two matrix are not equal" << "\n";
         return *this;
@@ -69,7 +71,7 @@ Matrix Matrix::operator += (double x) {
     return *this;
 }
 
-Matrix Matrix::operator -= (Matrix m) {
+Matrix Matrix::operator -= (Matrix& m) {
     if (_rows != m._rows || _cols != m._cols) {
         std::cout << "Number of rows or colums from the two matrix are not equal" << "\n";
         return *this;
@@ -87,7 +89,7 @@ Matrix Matrix::operator -= (double x) {
     return *this;
 }
 
-Matrix Matrix::operator *= (Matrix m) {
+Matrix Matrix::operator *= (Matrix& m) {
     if (_cols != m._rows) {
         std::cout << "Number of colums from first matrix not equal with the rows from the second matrix" << "\n";
         return *this;
@@ -112,6 +114,75 @@ Matrix Matrix::operator *= (double x) {
         for (int j = 0; j < _cols; j++)
             _matrix[i][j] *= x;
     return *this;
+}
+
+/// Unary overloaded operators
+
+Matrix Matrix::operator + () {
+    return *this;
+}
+
+Matrix Matrix::operator - () {
+    for (int i = 0; i < _rows; i++)
+        for (int j = 0; j < _cols; j++)
+            _matrix[i][j] *= -1;
+    return *this;
+}
+
+/// Binary overloaded operators
+
+Matrix operator + (Matrix& m1, Matrix& m2) {
+    Matrix m3(m1);
+    m3 += m2;
+    return m3;
+}
+
+Matrix operator + (Matrix& m1, double x) {
+    Matrix m2(m1);
+    m2 += x;
+    return m2;
+}
+
+Matrix operator + (double x, Matrix& m1) {
+    Matrix m2(m1);
+    m2 += x;
+    return m2;
+}
+
+Matrix operator - (Matrix& m1, Matrix& m2) {
+    Matrix m3(m1);
+    m3 -= m2;
+    return m3;
+}
+
+Matrix operator - (Matrix& m1, double x) {
+    Matrix m2(m1);
+    m2 -= x;
+    return m2;
+}
+
+Matrix operator - (double x, Matrix& m1) {
+    Matrix m2(m1);
+    m2 -= x;
+    return m2;
+}
+
+Matrix operator * (Matrix& m1, Matrix& m2) {
+    Matrix m3(m1);
+    m3 *= m2;
+    return m3;
+}
+
+Matrix operator * (Matrix& m1, double x) {
+    Matrix m2(m1);
+    m2 *= x;
+    return m2;
+}
+
+Matrix operator * (double x, Matrix& m1) {
+    Matrix m2(m1);
+    m2 *= x;
+    return m2;
 }
 
 std::ifstream& operator >> (std::ifstream& f, Matrix &m){

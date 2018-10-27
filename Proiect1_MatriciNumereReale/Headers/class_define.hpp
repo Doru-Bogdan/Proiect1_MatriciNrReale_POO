@@ -6,9 +6,7 @@
 //  Copyright © 2018 Doru Mancila. All rights reserved.
 //
 #include <vector>
-
 typedef std::vector < std::vector <double> > matrix;
-
 class Matrix {
 public:
     Matrix(unsigned int rows = 1, unsigned int cols = 1);
@@ -17,12 +15,23 @@ public:
     unsigned int getRows();
     unsigned int getCols();
     double getElem(unsigned int, unsigned int);
-    Matrix operator += (Matrix);
+    Matrix operator += (Matrix&);
     Matrix operator += (double);
-    Matrix operator -= (Matrix);
+    Matrix operator -= (Matrix&);
     Matrix operator -= (double);
-    Matrix operator *= (Matrix);
+    Matrix operator *= (Matrix&);
     Matrix operator *= (double);
+    Matrix operator + ();
+    Matrix operator - ();
+    friend Matrix operator + (Matrix&, Matrix&);
+    friend Matrix operator + (Matrix&, double);
+    friend Matrix operator + (double, Matrix&);
+    friend Matrix operator - (Matrix&, Matrix&);
+    friend Matrix operator - (Matrix&, double);
+    friend Matrix operator - (double, Matrix&);
+    friend Matrix operator * (Matrix&, Matrix&);
+    friend Matrix operator * (Matrix&, double);
+    friend Matrix operator * (double, Matrix&);
     friend std::ifstream& operator >> (std::ifstream&, Matrix &);
     friend std::istream& operator >> (std::istream&, Matrix &);
     friend std::ofstream& operator << (std::ofstream& , Matrix &);
