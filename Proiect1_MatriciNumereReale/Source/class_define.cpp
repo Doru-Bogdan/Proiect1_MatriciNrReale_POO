@@ -24,6 +24,10 @@ unsigned int Matrix::getCols() {
     return _cols;
 }
 
+double Matrix::getElem(unsigned int i, unsigned int j) {
+    return _matrix[i][j];
+}
+
 Matrix::Matrix(unsigned int rows, unsigned int cols) {
     _rows = rows;
     _cols = cols;
@@ -47,8 +51,8 @@ Matrix::~Matrix() {
     _matrix.clear();
 }
 
-Matrix Matrix::operator+=(Matrix m) {
-    if(_rows != m._rows || _cols != m._cols) {
+Matrix Matrix::operator += (Matrix m) {
+    if (_rows != m._rows || _cols != m._cols) {
         std::cout << "Number of rows or colums from the two matrix are not equal" << "\n";
         return *this;
     }
@@ -58,15 +62,15 @@ Matrix Matrix::operator+=(Matrix m) {
     return *this;
 }
 
-Matrix Matrix::operator+=(double x) {
+Matrix Matrix::operator += (double x) {
     for (int i = 0; i < _rows; i++)
         for (int j = 0; j < _cols; j++)
             _matrix[i][j] += x;
     return *this;
 }
 
-Matrix Matrix::operator-=(Matrix m) {
-    if(_rows != m._rows || _cols != m._cols) {
+Matrix Matrix::operator -= (Matrix m) {
+    if (_rows != m._rows || _cols != m._cols) {
         std::cout << "Number of rows or colums from the two matrix are not equal" << "\n";
         return *this;
     }
@@ -76,10 +80,37 @@ Matrix Matrix::operator-=(Matrix m) {
     return *this;
 }
 
-Matrix Matrix::operator-=(double x) {
+Matrix Matrix::operator -= (double x) {
     for (int i = 0; i < _rows; i++)
         for (int j = 0; j < _cols; j++)
             _matrix[i][j] -= x;
+    return *this;
+}
+
+Matrix Matrix::operator *= (Matrix m) {
+    if (_cols != m._rows) {
+        std::cout << "Number of colums from first matrix not equal with the rows from the second matrix" << "\n";
+        return *this;
+    }
+    matrix n;
+    n.resize(_rows);
+    for (int i = 0; i < _rows; i++)
+        n[i].resize(_cols);
+    n = _matrix;
+    for (int i = 0; i < _rows; i++)
+        for (int j = 0; j < _cols; j++)
+            _matrix[i][j] = 0;
+    for (int i = 0; i < _rows; i++)
+        for (int j = 0; j < m._cols; j++)
+            for (int k = 0; k < _cols; k++)
+                _matrix[i][j] = _matrix[i][j] + n[i][k] * m._matrix[k][j] ;
+    return *this;
+}
+
+Matrix Matrix::operator *= (double x) {
+    for (int i = 0; i < _rows; i++)
+        for (int j = 0; j < _cols; j++)
+            _matrix[i][j] *= x;
     return *this;
 }
 

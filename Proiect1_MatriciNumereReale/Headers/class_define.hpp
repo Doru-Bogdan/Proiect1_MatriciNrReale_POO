@@ -7,7 +7,7 @@
 //
 #include <vector>
 
-
+typedef std::vector < std::vector <double> > matrix;
 
 class Matrix {
 public:
@@ -16,10 +16,13 @@ public:
     ~Matrix();
     unsigned int getRows();
     unsigned int getCols();
+    double getElem(unsigned int, unsigned int);
     Matrix operator += (Matrix);
     Matrix operator += (double);
     Matrix operator -= (Matrix);
     Matrix operator -= (double);
+    Matrix operator *= (Matrix);
+    Matrix operator *= (double);
     friend std::ifstream& operator >> (std::ifstream&, Matrix &);
     friend std::istream& operator >> (std::istream&, Matrix &);
     friend std::ofstream& operator << (std::ofstream& , Matrix &);
@@ -27,7 +30,6 @@ public:
 private:
     unsigned int _rows;
     unsigned int _cols;
-    typedef std::vector < std::vector <double> > matrix;
     matrix _matrix;
     void alloc();
 };
