@@ -36,6 +36,8 @@ public:
     friend Matrix operator / (Matrix&, double);
     friend Matrix operator / (double, Matrix&);
     friend Matrix operator ^ (Matrix&, double);
+    friend bool operator == (Matrix&, Matrix&);
+    friend bool operator != (Matrix&, Matrix&);
     friend std::ifstream& operator >> (std::ifstream&, Matrix &);
     friend std::istream& operator >> (std::istream&, Matrix &);
     friend std::ofstream& operator << (std::ofstream& , Matrix &);

@@ -241,6 +241,8 @@ Matrix operator ^ (Matrix& m1, double x) {
     }
 }
 
+/// Access overloaded operator
+
 Matrix Matrix::operator[](unsigned int x) {
     try {
         if (x >= _rows || x < 0)
@@ -266,6 +268,26 @@ Matrix Matrix::operator[](unsigned int x) {
     }
     return m;
 }
+
+/// Relational overloaded operators
+
+bool operator == (Matrix& m1, Matrix& m2) {
+    if (m1._rows != m2._rows || m1._cols != m2._cols)
+        return -1;
+    for (int i = 0; i < m1._rows; i++)
+        for (int j = 0; j < m1._cols; j++)
+            if (m1._matrix[i][j] != m2._matrix[i][j])
+                return 0;
+    return 1;
+}
+
+bool operator != (Matrix& m1, Matrix& m2) {
+    if(m1 == m2)
+        return 0;
+    return 1;
+}
+
+/// Read and write overloaded operators
 
 
 std::ifstream& operator >> (std::ifstream& f, Matrix &m){
