@@ -23,6 +23,7 @@ public:
     Matrix operator *= (double);
     Matrix operator + ();
     Matrix operator - ();
+    Matrix operator [] (unsigned int);
     friend Matrix operator + (Matrix&, Matrix&);
     friend Matrix operator + (Matrix&, double);
     friend Matrix operator + (double, Matrix&);
@@ -32,6 +33,9 @@ public:
     friend Matrix operator * (Matrix&, Matrix&);
     friend Matrix operator * (Matrix&, double);
     friend Matrix operator * (double, Matrix&);
+    friend Matrix operator / (Matrix&, double);
+    friend Matrix operator / (double, Matrix&);
+    friend Matrix operator ^ (Matrix&, double);
     friend std::ifstream& operator >> (std::ifstream&, Matrix &);
     friend std::istream& operator >> (std::istream&, Matrix &);
     friend std::ofstream& operator << (std::ofstream& , Matrix &);

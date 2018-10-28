@@ -185,6 +185,89 @@ Matrix operator * (double x, Matrix& m1) {
     return m2;
 }
 
+Matrix operator / (Matrix& m1, double x) {
+    if (x == 0) {
+        std::cout << "Impossible division" << "\n" ;
+        int rows = m1.getRows();
+        int cols = m1.getCols();
+        Matrix m2(rows,cols);
+        return m2;
+    }
+    Matrix m2(m1);
+    for (int i = 0; i < m1._rows; i++)
+        for (int j = 0; j < m1._cols; j++)
+            m2._matrix[i][j] = m1._matrix[i][j] / x;
+    return m2;
+}
+
+Matrix operator / (double x, Matrix& m1) {
+    if (x == 0) {
+        std::cout << "Impossible division" << "\n" ;
+        int rows = m1.getRows();
+        int cols = m1.getCols();
+        Matrix m2(rows,cols);
+        return m2;
+    }
+    Matrix m2(m1);
+    for (int i = 0; i < m1._rows; i++)
+        for (int j = 0; j < m1._cols; j++)
+            m2._matrix[i][j] = m1._matrix[i][j] / x;
+    return m2;
+}
+
+Matrix operator ^ (Matrix& m1, double x) {
+    try {
+    if (m1._rows != m1._cols)
+        throw "Impossible operation";
+    if (x != (unsigned int)x)
+        throw "Impossible operation";
+    } catch(const char* mes) {
+        std::cout << mes << "\n";
+        Matrix m2;
+        return m2;
+    }
+    if (x == 0) {
+        Matrix m2;
+        return m2;
+    }
+    else if (x == 1)
+        return m1;
+    else {
+        Matrix m2(m1);
+        for (int i = 2; i <= x; i++) {
+            m2 *= m1;
+        }
+        return m2;
+    }
+}
+
+Matrix Matrix::operator[](unsigned int x) {
+    try {
+        if (x >= _rows || x < 0)
+            throw "This row does not exists";
+    } catch(const char* mes) {
+        std::cout << mes << "\n";
+        Matrix m;
+        return m;
+    }
+    if(_rows == 1) {
+        Matrix m;
+        m._matrix[0][0] = _matrix[1][x];
+        return m;
+    }
+    if(_cols == 1) {
+        Matrix m;
+        m._matrix[0][0] = _matrix[x][1];
+        return m;
+    }
+    Matrix m(1,_cols);
+    for (int j = 0; j < _cols; j++) {
+        m._matrix[0][j] = _matrix[x][j];
+    }
+    return m;
+}
+
+
 std::ifstream& operator >> (std::ifstream& f, Matrix &m){
     for (int i = 0; i < m._rows; i++) {
         for (int j = 0; j < m._cols; j++) {

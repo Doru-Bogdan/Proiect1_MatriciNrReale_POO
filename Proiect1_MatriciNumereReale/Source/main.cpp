@@ -13,8 +13,8 @@
 int main() {
     Matrix a(3,3), b(3,3), c(3,3);
     std::ifstream f("Source/data.in");
-    f >> a >> b;
-    c = 2 * a;
+    f >> a;
+    c = a[3];
     std::cout << c << "\n";
     //f.close();
     /*std::ofstream g("Source/data.out");
