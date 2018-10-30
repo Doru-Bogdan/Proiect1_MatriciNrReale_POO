@@ -216,16 +216,10 @@ Matrix operator / (double x, Matrix& m1) {
 }
 
 Matrix operator ^ (Matrix& m1, double x) {
-    try {
     if (m1._rows != m1._cols)
-        throw "Impossible operation";
+        throw std::exception();
     if (x != (unsigned int)x)
-        throw "Impossible operation";
-    } catch(const char* mes) {
-        std::cout << mes << "\n";
-        Matrix m2;
-        return m2;
-    }
+        throw std::exception();
     if (x == 0) {
         Matrix m2;
         return m2;
@@ -244,14 +238,8 @@ Matrix operator ^ (Matrix& m1, double x) {
 /// Access overloaded operator
 
 Matrix Matrix::operator[](unsigned int x) {
-    try {
-        if (x >= _rows || x < 0)
-            throw "This row does not exists";
-    } catch(const char* mes) {
-        std::cout << mes << "\n";
-        Matrix m;
-        return m;
-    }
+    if (x >= _rows || x < 0)
+        throw std::exception();
     if(_rows == 1) {
         Matrix m;
         m._matrix[0][0] = _matrix[1][x];

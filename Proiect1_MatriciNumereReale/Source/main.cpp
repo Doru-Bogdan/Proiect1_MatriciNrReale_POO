@@ -11,16 +11,22 @@
 #include "class_define.hpp"
 
 int main() {
-    Matrix a(3,3), b(3,3), c(3,3);
+    Matrix a(2,3), b(3,3), c;
     std::ifstream f("Source/data.in");
     f >> a >> b;
-    if (a != b)
+    try {
+        c = a^2;
+    } catch (std::exception) {
+        std::cout << "Invalid operation" << "\n";
+    }
+    std::cout << c;
+    /*if (a != b)
         std::cout << 1;
     f.close();
     //c = a[3];
     //std::cout << c << "\n";
     //f.close();
-    /*std::ofstream g("Source/data.out");
+    std::ofstream g("Source/data.out");
     g << c;
     g.close();*/
     return 0;
