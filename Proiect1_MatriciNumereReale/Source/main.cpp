@@ -8,17 +8,23 @@
 
 #include <iostream>
 #include <fstream>
-#include "class_define.hpp"
+#include "Matrix.hpp"
 
 int main() {
-    Matrix a(2,3), b(3,3), c;
+    Matrix a(3,3), b(2,3), c;
     std::ifstream f("Source/data.in");
     f >> a >> b;
     try {
+        c = a + b;
+    } catch (std::runtime_error const e) {
+        std::cout << e.what() << "\n";
+    }
+
+    /*try {
         c = a^2;
     } catch (std::exception) {
         std::cout << "Invalid operation" << "\n";
-    }
+    }*/
     std::cout << c;
     /*if (a != b)
         std::cout << 1;
