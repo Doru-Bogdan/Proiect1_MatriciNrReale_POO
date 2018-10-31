@@ -19,21 +19,7 @@ int main() {
     } catch (std::runtime_error const e) {
         std::cout << e.what() << "\n";
     }
-
-    /*try {
-        c = a^2;
-    } catch (std::exception) {
-        std::cout << "Invalid operation" << "\n";
-    }*/
     std::cout << c;
-    /*if (a != b)
-        std::cout << 1;
-    f.close();
-    //c = a[3];
-    //std::cout << c << "\n";
-    //f.close();
-    std::ofstream g("Source/data.out");
-    g << c;
-    g.close();*/
+    
     return 0;
 }
