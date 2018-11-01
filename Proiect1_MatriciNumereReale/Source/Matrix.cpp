@@ -87,16 +87,15 @@ Matrix& Matrix::operator *= (Matrix& object) {
     for (int i = 0; i < _rows; i++)
         newMatrix[i].resize(object._cols);
     newMatrix = _matrix;
-    for (int i = 0; i < _rows; i++)
-        for (int j = 0; j < _cols; j++)
-            _matrix[i][j] = 0;
-    for (int i = 0; i < _rows; i++)
-        for (int j = 0; j < object._cols; j++)
-            for (int k = 0; k < _cols; k++)
-                _matrix[i][j] = _matrix[i][j] + newMatrix[i][k] * object._matrix[k][j];
     _matrix.resize(_rows);
     for (int i = 0; i < _rows; i++)
         _matrix[i].resize(object._cols);
+    for (int i = 0; i < _rows; i++)
+        for (int j = 0; j < object._cols; j++){
+            _matrix[i][j] = 0;
+            for (int k = 0; k < _cols; k++)
+                _matrix[i][j] = _matrix[i][j] + newMatrix[i][k] * object._matrix[k][j];
+        }
     _cols = object._cols;
     return *this;
 }
@@ -189,31 +188,31 @@ Matrix operator * (double number, Matrix& object) {
     return result;
 }
 
-Matrix operator / (Matrix& object1, double number) {
+Matrix operator / (Matrix& object, double number) {
     if (number == 0)
         throw std::runtime_error("Impossible division");
-    Matrix result(object1);
-    for (int i = 0; i < object1._rows; i++)
-        for (int j = 0; j < object1._cols; j++)
-            result._matrix[i][j] = object1._matrix[i][j] / number;
+    Matrix result(object);
+    for (int i = 0; i < object._rows; i++)
+        for (int j = 0; j < object._cols; j++)
+            result._matrix[i][j] = object._matrix[i][j] / number;
     return result;
 }
 
-Matrix operator / (double number, Matrix& object1) {
+Matrix operator / (double number, Matrix& object) {
     if (number == 0)
         throw std::runtime_error("Impossible division");
-    Matrix result(object1);
-    for (int i = 0; i < object1._rows; i++)
-        for (int j = 0; j < object1._cols; j++)
-            result._matrix[i][j] = object1._matrix[i][j] / number;
+    Matrix result(object);
+    for (int i = 0; i < object._rows; i++)
+        for (int j = 0; j < object._cols; j++)
+            result._matrix[i][j] = object._matrix[i][j] / number;
     return result;
 }
 
 Matrix operator ^ (Matrix& object, int number) {
     if (object._rows != object._cols)
-        throw std::exception();
+        throw std::runtime_error("Number of rows are not equal with columns");
     if (number < 0)
-        throw std::exception();
+        throw std::runtime_error("Number to lift is not an unsigned integer");
     if (number == 0) {
         Matrix object2;
         return object2;
@@ -233,7 +232,7 @@ Matrix operator ^ (Matrix& object, int number) {
 
 Matrix Matrix::operator[](unsigned int number) {
     if (number >= _rows || number < 0)
-        throw std::runtime_error("jafajajsjd");
+        throw std::runtime_error("The row does not exist");
     if(_rows == 1) {
         Matrix result;
         result._matrix[0][0] = _matrix[0][number];
