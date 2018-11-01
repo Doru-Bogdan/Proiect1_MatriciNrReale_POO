@@ -11,11 +11,11 @@
 #include "Matrix.hpp"
 
 int main() {
-    Matrix a(3,3), b(2,3), c;
+    Matrix a(1,3), b(3,2), c;
     std::ifstream f("Source/data.in");
     f >> a >> b;
     try {
-        c = a + b;
+        c = b * a;
     } catch (std::runtime_error const e) {
         std::cout << e.what() << "\n";
     }

@@ -82,18 +82,22 @@ Matrix& Matrix::operator -= (double number) {
 Matrix& Matrix::operator *= (Matrix& object) {
     if (_cols != object._rows)
         throw std::runtime_error("Number of colums from first matrix not equal with the rows from the second matrix");
-    matrix newObject;
-    newObject.resize(_rows);
+    matrix newMatrix;
+    newMatrix.resize(_rows);
     for (int i = 0; i < _rows; i++)
-        newObject[i].resize(_cols);
-    newObject = _matrix;
+        newMatrix[i].resize(object._cols);
+    newMatrix = _matrix;
     for (int i = 0; i < _rows; i++)
         for (int j = 0; j < _cols; j++)
             _matrix[i][j] = 0;
     for (int i = 0; i < _rows; i++)
         for (int j = 0; j < object._cols; j++)
             for (int k = 0; k < _cols; k++)
-                _matrix[i][j] = _matrix[i][j] + newObject[i][k] * object._matrix[k][j] ;
+                _matrix[i][j] = _matrix[i][j] + newMatrix[i][k] * object._matrix[k][j];
+    _matrix.resize(_rows);
+    for (int i = 0; i < _rows; i++)
+        _matrix[i].resize(object._cols);
+    _cols = object._cols;
     return *this;
 }
 

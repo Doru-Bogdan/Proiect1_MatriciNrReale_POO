@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>A63E890A-3CC2-48E3-B50F-3410B0B6AB40</key>
+		<key>409B1582-FBD9-469B-B199-E468E537F281</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,19 +15,19 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
 			<key>fileName</key>
-			<string>A63E890A-3CC2-48E3-B50F-3410B0B6AB40.xcactivitylog</string>
+			<string>409B1582-FBD9-469B-B199-E468E537F281.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>signature</key>
 			<string>Proiect1_MatriciNumereReale-dynpclxrdlooxogltpdruaesspyj</string>
 			<key>timeStartedRecording</key>
-			<real>562690742.82866001</real>
+			<real>562788363.05839002</real>
 			<key>timeStoppedRecording</key>
-			<real>562690743.67501998</real>
+			<real>562788363.66788995</real>
 			<key>title</key>
 			<string>Build target Proiect1_MatriciNumereReale</string>
 			<key>uniqueIdentifier</key>
-			<string>A63E890A-3CC2-48E3-B50F-3410B0B6AB40</string>
+			<string>409B1582-FBD9-469B-B199-E468E537F281</string>
 		</dict>
 		<key>CFB4B52A-CFA3-4190-8A4A-3A6CC97F21B7</key>
 		<dict>
