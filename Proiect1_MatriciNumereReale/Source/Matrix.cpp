@@ -32,10 +32,12 @@ Matrix::Matrix(unsigned int rows, unsigned int cols) {
     _rows = rows;
     _cols = cols;
     alloc();
+    if (_rows == _cols) {
     for (int i = 0; i < _rows; i++)
         for (int j = 0; j < _cols; j++)
             if (i == j)
                 _matrix[i][j] = 1;
+    }
 }
 
 Matrix::Matrix(Matrix &object) {
@@ -104,6 +106,15 @@ Matrix& Matrix::operator *= (double number) {
     for (int i = 0; i < _rows; i++)
         for (int j = 0; j < _cols; j++)
             _matrix[i][j] *= number;
+    return *this;
+}
+
+Matrix& Matrix::operator /= (double number) {
+    if (number == 0)
+        throw std::runtime_error("Impossible division");
+    for (int i = 0; i < _rows; i++)
+        for (int j = 0; j < _cols; j++)
+            _matrix[i][j] /= number;
     return *this;
 }
 
